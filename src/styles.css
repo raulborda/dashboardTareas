@@ -1,0 +1,136 @@
+:root {
+	--fc-small-font-size: 0.8em;
+	--fc-page-bg-color: #fff;
+	--fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
+	--fc-neutral-text-color: #808080;
+	--fc-border-color: #ddd;
+
+	--fc-button-text-color: #fff;
+	--fc-button-bg-color: #22c02f;
+	--fc-button-border-color: #22c02f;
+	--fc-button-hover-bg-color: #22c02f;
+	--fc-button-hover-border-color: #22c02f;
+	--fc-button-active-bg-color: #27aa32;
+	--fc-button-active-border-color: #22c02f;
+
+	--fc-event-bg-color: #3788d8;
+	--fc-event-border-color: #3788d8;
+	--fc-event-text-color: #fff;
+	--fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
+
+	--fc-more-link-bg-color: #d0d0d0;
+	--fc-more-link-text-color: inherit;
+
+	--fc-event-resizer-thickness: 8px;
+	--fc-event-resizer-dot-total-width: 8px;
+	--fc-event-resizer-dot-border-width: 1px;
+
+	--fc-non-business-color: rgba(215, 215, 215, 0.3);
+	--fc-bg-event-color: rgb(143, 223, 130);
+	--fc-bg-event-opacity: 0.3;
+	--fc-highlight-color: rgba(188, 232, 241, 0.3);
+	--fc-today-bg-color: rgba(255, 220, 40, 0.15);
+	--fc-now-indicator-color: rgb(0, 255, 42);
+}
+
+.App {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+	/* overflow: hidden; */
+}
+.fc .fc-button {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* background-color: transparent; */
+	border: 1px solid transparent;
+	/* padding: 0.4em 0.65em; */
+	font-size: 0.8em;
+	line-height: 1.5;
+	border-radius: 3px;
+	border: none;
+	box-shadow: none;
+}
+
+.calendar_wrapper {
+	min-height: 98vh;
+}
+
+button.fc-button {
+	box-shadow: none !important;
+}
+
+.fc-h-event .fc-event-title-container {
+	flex-grow: 1;
+	flex-shrink: 1;
+	min-width: 0;
+	padding: 3px !important;
+}
+:-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-button {
+	width: 5px;
+	height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: gray;
+	border: 0px none;
+	border-radius: 3px;
+	opacity: 0.3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: gray;
+	opacity: 0.3;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: gray;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.5);
+	opacity: 0.2;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-track:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-track:active {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+.loader {
+	font-size: 1.2rem;
+	width: 100vw;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wrapper {
+	padding: 10px;
+}
