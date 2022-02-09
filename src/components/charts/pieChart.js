@@ -71,7 +71,7 @@ const RePieChart = ({ dataChart, refContainer }) => {
 						<PieChart
 							margin={{
 								left: 15,
-								top: 15,
+								top: -40,
 								bottom: 15,
 								right: 15,
 							}}

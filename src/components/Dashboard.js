@@ -83,11 +83,12 @@ const Dashboard = () => {
 				</Col>
 				<Col sm={24}>
 					<Card>
+						{ totales && totales.length ? 
 						<div className="indicator_wrapper">
-							<span>{totales[0].totales} Tareas</span>
-							<span>{totales[0].abiertas} Abiertas</span>
-							<span>{totales[0].vencidas} Vencidas</span>
-						</div>
+							<span>{totales[0].totales} TAREAS</span>
+							<span>{totales[0].abiertas} ABIERTAS</span>
+							<span>{totales[0].vencidas} VENCIDAS</span>
+						</div> : null}
 						{/* <Col sm={24} md={8}>
 							<div className="indicators">
 							</div>
@@ -137,13 +138,13 @@ const Dashboard = () => {
 				{/* )} */}
 				{/* </Col>  */}
 				<Col sm={24} md={12}>
-					<Card title="TAREAS ABIERTAS POR USUARIO" size="small" style={{ height: 353 }}>
-						<Table size="small" dataSource={table} pagination={{ pageSize: 5 }} columns={columns} size="small" />
+					<Card title="TAREAS ABIERTAS POR USUARIO" size="small" style={{ height: 458 }}>
+						<Table size="small" dataSource={table} pagination={{ pageSize: 8 }} columns={columns} size="small" />
 					</Card>
 				</Col>
 				<Col sm={24} md={12}>
 					<Card title="TAREAS ABIERTAS POR TIPO" size="small">
-						<div className="chart_wrapper" ref={chart} style={{ height: 290 }}>
+						<div className="chart_wrapper" ref={chart} style={{ height: 394 }}>
 							{graph && <RePieChart dataChart={graph} refContainer={chart}></RePieChart>}
 						</div>
 					</Card>
