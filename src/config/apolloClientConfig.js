@@ -12,8 +12,8 @@ const Client = new ApolloClient({
 	cache: new InMemoryCache(),
 	link: new HttpLink({
 		//uri: `http://10.0.0.28:4002`
-		uri: process.env.REACT_APP_APOLLO,
-		//uri: URL,
+		//uri: process.env.REACT_APP_APOLLO,
+		uri: URL,
 		//uri: `http://beeapp.binamics.com.ar:4002`,
 
 		// fetch,
