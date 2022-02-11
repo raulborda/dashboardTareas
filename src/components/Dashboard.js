@@ -39,7 +39,7 @@ const Dashboard = () => {
 	];
 
 	const onSearchUser = (val) => {
-		if (val.length >= 3) {
+		if (val.length >= 1) {
 			setSearchUser(val.toLowerCase());
 		}
 	};

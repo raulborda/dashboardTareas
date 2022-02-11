@@ -87,6 +87,7 @@ const RePieChart = ({ dataChart, refContainer }) => {
 								// fill="#8884d8"
 								dataKey="value"
 								onMouseEnter={onPieEnter}
+
 							/>
 
 							<Legend verticalAlign="bottom" filterNull iconType="circle" />
